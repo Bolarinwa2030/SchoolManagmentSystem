@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{350EF74D-8C65-4E08-B6E5-750CC61E3A58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchoolManagementSystem</RootNamespace>
+    <AssemblyName>SchoolManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\Guna.UI2_WinForms_v2.0.1.2\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>E:\Guna.UI2_WinForms_v2.0.1.2\yes\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dc_masterdatase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dc_masterdatase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeForm.Designer.cs">
+      <DependentUpon>FeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Primary UC\RemoveStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Primary UC\RemoveStudent.Designer.cs">
+      <DependentUpon>RemoveStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Primary UC\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Primary UC\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Primary UC\UC_NewRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Primary UC\UC_NewRegistration.Designer.cs">
+      <DependentUpon>UC_NewRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Primary UC\UC_PrimaryFees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Primary UC\UC_PrimaryFees.Designer.cs">
+      <DependentUpon>UC_PrimaryFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Primary UC\Uc_TeacherRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Primary UC\Uc_TeacherRegistration.Designer.cs">
+      <DependentUpon>Uc_TeacherRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrimarySector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimarySector.Designer.cs">
+      <DependentUpon>PrimarySector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rEPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEPORT.Designer.cs">
+      <DependentUpon>rEPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreenNew.Designer.cs">
+      <DependentUpon>SplashScreenNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UC_ModifyStudentDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ModifyStudentDetails.Designer.cs">
+      <DependentUpon>UC_ModifyStudentDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FeeForm.resx">
+      <DependentUpon>FeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primary UC\RemoveStudent.resx">
+      <DependentUpon>RemoveStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primary UC\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primary UC\UC_NewRegistration.resx">
+      <DependentUpon>UC_NewRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primary UC\UC_PrimaryFees.resx">
+      <DependentUpon>UC_PrimaryFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primary UC\Uc_TeacherRegistration.resx">
+      <DependentUpon>Uc_TeacherRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimarySector.resx">
+      <DependentUpon>PrimarySector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.rdlc" />
+    <EmbeddedResource Include="rEPORT.resx">
+      <DependentUpon>rEPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenNew.resx">
+      <DependentUpon>SplashScreenNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentReport.rdlc" />
+    <EmbeddedResource Include="Tuitionreport.rdlc" />
+    <EmbeddedResource Include="UC_ModifyStudentDetails.resx">
+      <DependentUpon>UC_ModifyStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dc_masterdatase.xsc">
+      <DependentUpon>dc_masterdatase.xsd</DependentUpon>
+    </None>
+    <None Include="dc_masterdatase.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dc_masterdatase.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dc_masterdatase.xss">
+      <DependentUpon>dc_masterdatase.xsd</DependentUpon>
+    </None>
+    <None Include="NewDataSet1.xsc">
+      <DependentUpon>NewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NewDataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewDataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NewDataSet1.xss">
+      <DependentUpon>NewDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
